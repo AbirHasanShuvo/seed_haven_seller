@@ -11,4 +11,5 @@ const appname = "seedHaven Seller App",
     products = 'Products',
     orders = 'Orders',
     settings = 'Settings',
+    loginto = 'Login to your account',
     credit = "@AbirHasanShuvo";
