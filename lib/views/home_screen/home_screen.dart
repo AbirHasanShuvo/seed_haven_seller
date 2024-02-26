@@ -1,4 +1,5 @@
 import 'package:intl/intl.dart' as intl;
+import 'package:seed_haven_seller/views/widgets/appbar_widget.dart';
 import 'package:seed_haven_seller/views/widgets/dashboard_button.dart';
 import 'package:seed_haven_seller/views/widgets/text_style.dart';
 import '../../const/const.dart';
@@ -9,19 +10,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: boldText(text: dashboard, color: fontGrey, size: 16.0),
-        actions: [
-          Center(
-            child: boldText(
-                text:
-                    intl.DateFormat('EEE, MMM d, ' 'yy').format(DateTime.now()),
-                color: purpleColor),
-          ),
-          10.widthBox
-        ],
-      ),
+      appBar: appbar(dashboard),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
