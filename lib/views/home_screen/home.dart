@@ -59,7 +59,6 @@ class Home extends StatelessWidget {
           selectedItemColor: purpleColor,
           unselectedItemColor: darkGrey,
           items: bottomNavbar)),
-      appBar: AppBar(),
       body: Obx(
         () => Column(
           children: [

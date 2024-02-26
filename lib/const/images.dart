@@ -7,6 +7,6 @@ const icOrders = "assets/icons/orders.png";
 const icProducts = "assets/icons/products.png";
 const icProfile = "assets/icons/profile.png";
 const icShopSettings = "assets/icons/shop_setting.png";
-const isStar = "assets/icons/star.png";
+const icStar = "assets/icons/star.png";
 const icVerify = "assets/icons/verify.png";
 const imageProduct = "assets/product.jpg";
