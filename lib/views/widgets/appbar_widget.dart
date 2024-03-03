@@ -4,6 +4,7 @@ import 'package:seed_haven_seller/views/widgets/text_style.dart';
 
 AppBar appbar(title) {
   return AppBar(
+    backgroundColor: Colors.white,
     automaticallyImplyLeading: false,
     title: boldText(text: title, color: fontGrey, size: 16.0),
     actions: [
