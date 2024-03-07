@@ -1,4 +1,6 @@
+import 'package:get/get.dart';
 import 'package:seed_haven_seller/const/const.dart';
+import 'package:seed_haven_seller/views/messages_screen/chat_screen.dart';
 import 'package:seed_haven_seller/views/widgets/text_style.dart';
 
 class MessagesScreen extends StatelessWidget {
@@ -6,6 +8,12 @@ class MessagesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Get.back();
+          },
+          icon: const Icon(Icons.arrow_back),
+        ),
         title: boldText(text: messages, size: 16.0, color: fontGrey),
       ),
       body: Padding(
@@ -16,6 +24,9 @@ class MessagesScreen extends StatelessWidget {
               children: List.generate(
                   20,
                   (index) => ListTile(
+                        onTap: () {
+                          Get.to(() => ChatScreen());
+                        },
                         leading: const CircleAvatar(
                           backgroundColor: purpleColor,
                           child: Icon(

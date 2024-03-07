@@ -27,6 +27,7 @@ const appname = "seedHaven Seller App",
     changeImage = 'Change Image',
     shopSettings = 'Shop Settings',
     confirmPass = 'Confirm Password',
+    chat = 'Chats',
     credit = "@AbirHasanShuvo";
 
 //shop setting string
