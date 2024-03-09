@@ -1,3 +1,6 @@
+import 'package:get/get.dart';
+import 'package:seed_haven_seller/views/product_screen/add_product.dart';
+import 'package:seed_haven_seller/views/product_screen/product_details.dart';
 import 'package:seed_haven_seller/views/widgets/appbar_widget.dart';
 
 import '../../const/const.dart';
@@ -11,7 +14,9 @@ class ProductScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         backgroundColor: purpleColor,
-        onPressed: () {},
+        onPressed: () {
+          Get.to(()=> const AddProduct());
+        },
         child: const Icon(
           Icons.add,
           color: Colors.white,
@@ -26,7 +31,9 @@ class ProductScreen extends StatelessWidget {
             children: List.generate(
                 20,
                 (index) => ListTile(
-                      onTap: () {},
+                      onTap: () {
+                        Get.to(() => const ProductDetails());
+                      },
                       leading: Image.asset(
                         imageProduct,
                         width: 100,
