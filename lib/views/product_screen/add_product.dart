@@ -73,20 +73,28 @@ class AddProduct extends StatelessWidget {
                   (index) => productImages(label: index + 1),
                 ),
               ),
+              10.heightBox,
               normalText(
                   text: 'First image will be on the display', color: lightGrey),
+
               10.heightBox,
               boldText(text: 'Choose product color'),
+              const Divider(),
               Wrap(
                 spacing: 8.0,
                 runSpacing: 8.0,
                 children: List.generate(
                     9,
-                    (index) => VxBox(child: normalText(text: index))
-                        .color(Vx.randomPrimaryColor)
-                        .roundedFull
-                        .size(70, 70)
-                        .make()),
+                    (index) => Stack(
+                      alignment: Alignment.center,
+                      children: [VxBox()
+                          .color(Vx.randomPrimaryColor)
+                          .roundedFull
+                          .size(70, 70)
+                          .make(),
+                      const Icon(Icons.done, color: white,)
+                      ]
+                    )),
               ),
             ],
           ),

@@ -15,7 +15,7 @@ class ProductScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor: purpleColor,
         onPressed: () {
-          Get.to(()=> const AddProduct());
+          Get.to(() => const AddProduct());
         },
         child: const Icon(
           Icons.add,
@@ -41,7 +41,13 @@ class ProductScreen extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                       title: boldText(text: 'Product Title', color: fontGrey),
-                      subtitle: normalText(text: '\$40.0', color: darkGrey),
+                      subtitle: Row(
+                        children: [
+                          normalText(text: '\$40.0', color: darkGrey),
+                          10.widthBox,
+                          boldText(text: 'Featured', color: green)
+                        ],
+                      ),
                       trailing: VxPopupMenu(
                           arrowSize: 0.0,
                           child: Icon(Icons.more_vert_rounded),

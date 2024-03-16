@@ -1,6 +1,5 @@
 import 'package:get/get.dart';
 import 'package:seed_haven_seller/const/const.dart';
-import 'package:seed_haven_seller/views/product_screen/components/product_images.dart';
 import 'package:seed_haven_seller/views/widgets/text_style.dart';
 
 class ProductDetails extends StatelessWidget {
@@ -43,6 +42,15 @@ class ProductDetails extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   boldText(text: 'Product title', color: fontGrey, size: 16.0),
+                  10.heightBox,
+                  Row(
+                    children: [
+                      boldText(text: 'Category', color: fontGrey, size: 16.0),
+                      10.widthBox,
+                      normalText(
+                          text: 'Subcategory', color: fontGrey, size: 16.0)
+                    ],
+                  ),
                   10.heightBox,
                   VxRating(
                     isSelectable: false,
