@@ -13,3 +13,5 @@ const messageCollection = 'messages';
 
 const ordersCollection = 'orders';
 
+const vendorsColletction = 'vendors';
+
